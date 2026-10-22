@@ -3,7 +3,7 @@ import os
 import streamlit as st
 
 st.set_page_config(
-    page_title="整理番号ご案内 (250円)", page_icon="🍢", layout="centered"
+    page_title="整理番号ご案内 (250円)", page_icon="🐓", layout="centered"
 )
 
 DATA_FILE = "counter_250.json"
@@ -26,7 +26,7 @@ if "ticket" in st.query_params:
 elif "my_number_250" not in st.session_state:
   st.session_state.my_number_250 = None
 
-st.title("🍢 もも3本（250円）整理番号")
+st.title("🐓 もも3本（250円）整理番号")
 
 if st.session_state.my_number_250:
   st.markdown("---")
